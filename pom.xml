@@ -65,12 +65,24 @@
 				</executions>
 				<configuration>
 					<coverage>
-						<runCoverage>true</runCoverage>
-						<formats>
-							<format>html</format>
-						</formats>
-					</coverage>
-				</configuration>
+                        <runCoverage>true</runCoverage>
+                        <failBuild>true</failBuild>
+                        <requiredApplicationCoverage>90</requiredApplicationCoverage>
+                        <requiredResourceCoverage>100</requiredResourceCoverage>
+                        <requiredFlowCoverage>100</requiredFlowCoverage>
+                        <formats>
+                            <format>console</format>
+                            <format>html</format>
+                        </formats>
+                    </coverage>
+
+					<runtimeVersion>4.3.0-20210622</runtimeVersion>
+
+			<!-- <runtimeVersion>${​​​​​app.version}​​​​​</runtimeVersion> -->
+
+			</configuration>
+
+
 			</plugin>
 		</plugins>
 	</build>
