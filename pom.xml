@@ -31,8 +31,7 @@
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				
+				<extensions>true</extensions>				
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
@@ -46,8 +45,7 @@
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
-				</configuration>
-				
+				</configuration>				
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
@@ -75,14 +73,9 @@
                             <format>html</format>
                         </formats>
                     </coverage>
-
 					<runtimeVersion>4.3.0-20210622</runtimeVersion>
-
 			<!-- <runtimeVersion>${​​​​​app.version}​​​​​</runtimeVersion> -->
-
 			</configuration>
-
-
 			</plugin>
 		</plugins>
 	</build>
@@ -98,6 +91,12 @@
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-sockets-connector</artifactId>
 			<version>1.2.1</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.mulesoft.connectors</groupId>
+			<artifactId>mule-cloudhub-connector</artifactId>
+			<version>1.0.1</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
