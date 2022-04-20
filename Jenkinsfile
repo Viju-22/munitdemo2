@@ -6,13 +6,13 @@ pipeline
     
         stage('Build Application'){
         steps{
-        bat 'mvn clean install'
+        bat 'mvn -B -U -e -V clean install -DskipTests'
         }	
         }
         
         stage('Munit Testing'){
         steps{
-        bat 'mvn test'
+        bat 'mvn clean test'
         }     
         }
              
