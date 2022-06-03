@@ -38,7 +38,7 @@
 						<muleVersion>4.3.0</muleVersion>
 						<username>${anypoint.userName}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>BuildMunit1</applicationName>
+						<applicationName>BuildMunitDemo1</applicationName>
 						<environment>Test</environment>
 						<businessGroup>MuleSoft</businessGroup>
 						<workers>1</workers>
