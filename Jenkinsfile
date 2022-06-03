@@ -6,7 +6,7 @@ pipeline
     
         stage('Build Application'){
         steps{
-        bat 'mvn -X -B -U -e -V clean install -DskipTests'
+        bat 'mvn clean install -DskipTests'
         }	
         }
         
@@ -18,7 +18,7 @@ pipeline
              
         stage('Deploy Application To Mulesoft'){
         steps{
-        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory4 -Danypoint.password=Capg@1999'
+        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory5 -Danypoint.password=Capg@1999'
         }
        
         }
